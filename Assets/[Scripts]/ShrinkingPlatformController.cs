@@ -110,7 +110,7 @@ public class ShrinkingPlatformController : MonoBehaviour
     private void Shrink()
     {
         //if the size of the platform & collider is smaller than a certain size, then destroy the platform
-        if (transform.localScale.x <= objectScale.x * 0.35 && transform.localScale.y <= objectScale.y * 0.35)
+        if (transform.localScale.x <= objectScale.x * 0.5 && transform.localScale.y <= objectScale.y * 0.5)
         {
             Destroy(gameObject);
         }
